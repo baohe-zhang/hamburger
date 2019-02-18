@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger</title>
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="navbar">
+        <img id="logo" src="https://www.mcdonalds.com/content/dam/usa/logo/m_logo.png">
+    	<div id="navbar-right">
+            <a href="#" id="home">Home</a>
+            <a href="#section1" id="sec1">Hamburger</a>
+            <a href="#section2" id="sec2">Nutrition</a>
+            <a href="#section3" id="sec3">Advertisement</a>
+    	</div>
+    </div>
+
+    <div class="section" id="section1">
+        <div id="section1-container">
+            <div id="slide-container">
+                <div class="slide fade">
+                    <img src="https://www.mcdonalds.com/content/dam/usa/documents/hotg/20181123-DoubleQPC.jpg">
+                    <div class="text">Double Quarter Pounder with Cheese</div>
+                </div>
+               <div class="slide fade">
+                    <img src="https://www.mcdonalds.com/content/dam/usa/documents/hotg/20181123-QPC.jpg">
+                    <div class="text">Quarter Pounder with Cheese</div>
+                </div>
+                <div class="slide fade">
+                    <img src="https://www.mcdonalds.com/content/dam/usa/documents/hotg/20181123-DoubleMushroom&Swiss.jpg">
+                    <div class="text">Double Mushroom & Swiss Burger</div>
+                </div>
+                <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlide(1)">&#10095;</a>
+            </div>
+
+            <div id="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div> 
+
+            <div id="icon-container">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <a href="https://www.facebook.com/McDonalds/" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/McDonalds" class="fa fa-twitter"></a>
+                <a href="https://www.youtube.com/c/McDonalds" class="fa fa-youtube"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="section2">
+        <div id="section2-container">
+            <div id="section2-title"><h1>Nutrition Summary</h1></div>
+            <div id="column-container">
+                <div id="column1">
+                    <img src="https://www.mcdonalds.com/content/dam/usa/documents/hotg/20181123-QPC.jpg">
+                    <h3>Quarter Pounder</h3>
+                    <button id="button1">LEARN MORE</button>
+                    <div id="modal1" class="modal">
+                        <div class="modal-content">
+                            <div id="close1" class="close">&times;</div>
+                            <table>
+                                <tr>
+                                    <td><b>Calories From Fat:</b> 250</td>
+                                    <td><b>Sodium:</b> 1110mg</td>
+                                    <td><b>Vitamin A:</b> 1090IU</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Saturated Fat:</b> 13g (66% DV)</td>
+                                    <td><b>Dietary Fiber:</b> 2g (10% DV)</td>
+                                    <td><b>Vitamin C:</b> 2mg (4% DV)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Trans Fat:</b> 1.5g</td>
+                                    <td><b>Sugars:</b> 10g</td>
+                                    <td><b>Calcium:</b> 190mg (20% DV)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Cholesterol:</b> 100mg (34% DV)</td>
+                                    <td></td>
+                                    <td><b>Iron:</b> 4.5mg (25% DV)</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="column2">
+                    <img src="https://www.mcdonalds.com/content/dam/usa/documents/hotg/20181123-DoubleQPC.jpg">
+                    <h3>Double Quarter Pounder</h3>
+                    <button id="button2">LEARN MORE</button>
+                    <div id="modal2" class="modal">
+                        <div class="modal-content">
+                            <div id="close2" class="close">&times;</div>
+                            <table>
+                                <tr>
+                                    <td><b>Calories From Fat:</b> 250</td>
+                                    <td><b>Sodium:</b> 1110mg (46% DV)</td>
+                                    <td><b>Vitamin A:</b> 1090IU</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Saturated Fat:</b> 13g (66% DV)</td>
+                                    <td><b>Dietary Fiber:</b> 2g (10% DV)</td>
+                                    <td><b>Vitamin C:</b> 2mg (4% DV)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Trans Fat:</b> 1.5g</td>
+                                    <td><b>Sugars:</b> 10g</td>
+                                    <td><b>Calcium:</b> 190mg (20% DV)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Cholesterol:</b> 100mg (34% DV)</td>
+                                    <td></td>
+                                    <td><b>Iron:</b> 4.5mg (25% DV)</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="column3">
+                    <img src="https://www.mcdonalds.com/content/dam/usa/documents/hotg/20181123-DoubleMushroom&Swiss.jpg">
+                    <h3>Double Mushroom & Swiss</h3>
+                    <button id="button3">LEARN MORE</button>
+                    <div id="modal3" class="modal">
+                        <div class="modal-content">
+                            <div id="close3" class="close">&times;</div>
+                            <table>
+                                <tr>
+                                    <td><b>Calories From Fat:</b> 510</td>
+                                    <td><b>Sodium:</b> 1160mg (48% DV)</td>
+                                    <td><b>Vitamin A:</b> 430IU (8% DV)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Saturated Fat:</b> 22g (111% DV)</td>
+                                    <td><b>Dietary Fiber:</b> 3g (10% DV)</td>
+                                    <td><b>Vitamin C:</b> 1mg (2% DV)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Trans Fat:</b> 2.5g</td>
+                                    <td><b>Sugars:</b> 11g</td>
+                                    <td><b>Calcium:</b> 320mg (30% DV)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Cholesterol:</b> 170mg (57% DV)</td>
+                                    <td></td>
+                                    <td><b>Iron:</b> 7mg (40% DV)</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="section3">
+        <div id="section3-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/afXPESeRO2A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div id="text">&copy; 2019 Spring CS498-MP1 baohe-zhang</div>
+    </div>
+
+
+    <script src="bundle.js" type="text/javascript"></script>
+</body>
+
+</html>
